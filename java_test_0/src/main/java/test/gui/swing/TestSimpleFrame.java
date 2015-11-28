@@ -1,10 +1,18 @@
 package test.gui.swing;
 
+import java.awt.Dimension;
+import java.awt.Toolkit;
+
 import javax.swing.JFrame;
 
 public class TestSimpleFrame {
 
 	public static void main(String[] args) {
+		
+		Toolkit kit = Toolkit.getDefaultToolkit();
+		Dimension screenSize = kit.getScreenSize();
+		int screenWidth = screenSize.width;
+		int screenHeight = screenSize.height;
 		
 		JFrame frame = new JFrame() {
 			
@@ -22,7 +30,8 @@ public class TestSimpleFrame {
 		frame.setTitle("第一个窗口");
 //		Image image = new ;
 //		frame.setIconImage(image);
-//		frame.setLocation(500, 300);
+		frame.setLocation(screenWidth/6, screenHeight/6);
+		frame.setSize(screenWidth / 2, screenHeight / 2);
 //		frame.setBounds(500, 300, 500, 300);
 		frame.setResizable(false);
 		frame.setLocationByPlatform(true);

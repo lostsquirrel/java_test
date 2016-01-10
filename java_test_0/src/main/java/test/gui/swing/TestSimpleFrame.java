@@ -1,6 +1,7 @@
 package test.gui.swing;
 
 import java.awt.Dimension;
+import java.awt.Image;
 import java.awt.Toolkit;
 
 import javax.swing.JFrame;
@@ -13,6 +14,7 @@ public class TestSimpleFrame {
 		Dimension screenSize = kit.getScreenSize();
 		int screenWidth = screenSize.width;
 		int screenHeight = screenSize.height;
+		
 		
 		JFrame frame = new JFrame() {
 			
@@ -28,8 +30,8 @@ public class TestSimpleFrame {
 		
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setTitle("第一个窗口");
-//		Image image = new ;
-//		frame.setIconImage(image);
+		Image img = kit.getImage("19802.png");
+		frame.setIconImage(img);
 		frame.setLocation(screenWidth/6, screenHeight/6);
 		frame.setSize(screenWidth / 2, screenHeight / 2);
 //		frame.setBounds(500, 300, 500, 300);

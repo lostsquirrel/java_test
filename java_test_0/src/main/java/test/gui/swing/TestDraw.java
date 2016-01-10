@@ -42,7 +42,7 @@ public class TestDraw {
 								double height = 150;
 
 								Rectangle2D rect = new Rectangle2D.Double(leftX, topY, width, height);
-								Point2D p1 = new Point2D.Double(0, 0);
+								Point2D p1 = new Point2D.Double(1, 1);
 								Point2D p2 = new Point2D.Double(111, 111);
 								Rectangle2D rect2 = new Rectangle2D.Double();
 								rect2.setFrameFromDiagonal(p1, p2);

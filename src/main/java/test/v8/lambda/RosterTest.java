@@ -109,7 +109,6 @@ public class RosterTest {
 	}
 
 	// Approach 8: Use Generics More Extensively
-
 	public static <X, Y> void processElements(Iterable<X> source, Predicate<X> tester, Function<X, Y> mapper,
 			Consumer<Y> block) {
 		for (X p : source) {
@@ -203,7 +202,8 @@ public class RosterTest {
 		System.out.println(
 				"Persons who are eligible for Selective Service " + "(with Predicate and Consumer parameters):");
 
-		processPersons(roster, p -> p.getGender() == Person.Sex.MALE && p.getAge() >= 18 && p.getAge() <= 25,
+		processPersons(roster, 
+				p -> p.getGender() == Person.Sex.MALE && p.getAge() >= 18 && p.getAge() <= 25,
 				p -> p.printPerson());
 	}
 

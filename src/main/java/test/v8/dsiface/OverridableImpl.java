@@ -1,4 +1,4 @@
-package test.v8.dsi;
+package test.v8.dsiface;
 
 public class OverridableImpl implements Defaulable {
 	@Override

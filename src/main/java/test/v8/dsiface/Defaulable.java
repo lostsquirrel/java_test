@@ -1,4 +1,4 @@
-package test.v8.dsi;
+package test.v8.dsiface;
 
 public interface Defaulable {
 	// Interfaces now allow default methods, the implementer may or

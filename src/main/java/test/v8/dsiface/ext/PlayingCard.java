@@ -43,8 +43,10 @@ public class PlayingCard implements Card {
 	}
 
 	public static void main(String... args) {
-		new PlayingCard(Rank.ACE, Suit.DIAMONDS);
-		new PlayingCard(Rank.KING, Suit.SPADES);
+		PlayingCard a = new PlayingCard(Rank.ACE, Suit.DIAMONDS);
+		PlayingCard b = new PlayingCard(Rank.KING, Suit.SPADES);
+		System.out.println(a);
+		System.out.println(b);
 	}
 
 }

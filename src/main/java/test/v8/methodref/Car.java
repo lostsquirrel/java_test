@@ -3,7 +3,7 @@ package test.v8.methodref;
 import java.util.function.Supplier;
 
 public class Car {
-	public static Car create( final Supplier< Car > supplier ) {
+	public static Car create(final Supplier< Car > supplier) {
         return supplier.get();
     }              
         
@@ -12,10 +12,16 @@ public class Car {
     }
         
     public void follow( final Car another ) {
-        System.out.println( "Following the " + another.toString() );
+        System.out.println(this.toString() + " Following the " + another.toString() );
     }
         
     public void repair() {   
         System.out.println( "Repaired " + this.toString() );
     }
+
+	@Override
+	public String toString() {
+		return "Car [" + super.hashCode() + "]";
+	}
+    
 }

@@ -1,4 +1,4 @@
-package test.v8.lambda;
+package demo.v8.lambda;
 
 /**
  * @author lisong

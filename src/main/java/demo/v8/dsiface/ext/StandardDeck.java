@@ -1,4 +1,4 @@
-package test.v8.dsiface.ext;
+package demo.v8.dsiface.ext;
 
 import java.util.ArrayList;
 import java.util.Collections;

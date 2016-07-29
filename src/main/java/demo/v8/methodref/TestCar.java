@@ -1,4 +1,4 @@
-package test.v8.methodref;
+package demo.v8.methodref;
 
 import java.util.Arrays;
 import java.util.List;

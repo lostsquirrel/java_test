@@ -1,4 +1,4 @@
-package test.v8.dsiface;
+package demo.v8.dsiface;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

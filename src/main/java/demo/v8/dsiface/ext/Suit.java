@@ -1,4 +1,4 @@
-package test.v8.dsiface.ext;
+package demo.v8.dsiface.ext;
 
 public enum Suit {
 	DIAMONDS(1, "Diamonds"), CLUBS(2, "Clubs"), HEARTS(3, "Hearts"), SPADES(4, "Spades");

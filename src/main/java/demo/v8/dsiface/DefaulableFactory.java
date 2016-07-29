@@ -1,4 +1,4 @@
-package test.v8.dsiface;
+package demo.v8.dsiface;
 
 import java.util.function.Supplier;
 

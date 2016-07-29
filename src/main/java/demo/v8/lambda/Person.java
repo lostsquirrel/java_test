@@ -1,4 +1,4 @@
-package test.v8.lambda;
+package demo.v8.lambda;
 
 import java.time.LocalDate;
 import java.util.ArrayList;

@@ -1,4 +1,4 @@
-package test.v8.dsiface.d;
+package demo.v8.dsiface.d;
 
 import org.junit.Test;
 

@@ -1,4 +1,4 @@
-package test.v8.lambda;
+package demo.v8.lambda;
 
 /*
  * Copyright (c) 2013, Oracle and/or its affiliates. All rights reserved.

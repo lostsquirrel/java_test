@@ -1,4 +1,4 @@
-package act;
+package demo.others;
 
 /**
  * 活动奖品

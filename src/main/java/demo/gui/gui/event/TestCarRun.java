@@ -7,12 +7,12 @@ import java.awt.LayoutManager;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class TestCarRun {
 
-	private static final Log log = LogFactory.getLog(TestCarRun.class);
+	private static final Logger log = LoggerFactory.getLogger(TestCarRun.class);
 
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
@@ -33,7 +33,7 @@ class CarFrame extends JFrame {
 
 	private static final long serialVersionUID = 1L;
 
-	private static final Log log = LogFactory.getLog(CarFrame.class);
+	private static final Logger log = LoggerFactory.getLogger(CarFrame.class);
 
 	public CarFrame() {
 		log.debug("init CarFrame...");

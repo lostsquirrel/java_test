@@ -1,20 +1,20 @@
-<?xml version="1.0" encoding="UTF-8" ?><!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
-<log4j:configuration>
-	<appender name="CONSOLE" class="org.apache.log4j.ConsoleAppender">
-		<layout class="org.apache.log4j.PatternLayout">
-			<param name="ConversionPattern" value="%d - %c -%-4r [%t] %-5p %x - %m%n" />
-		</layout>    <!--限制输出级别 -->
-		<filter class="org.apache.log4j.varia.LevelRangeFilter">
-			<param name="LevelMax" value="ERROR" />
-			<param name="LevelMin" value="TRACE" />
-		</filter>
+<configuration>
+
+	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+		<!-- encoders are assigned the type ch.qos.logback.classic.encoder.PatternLayoutEncoder 
+			by default -->
+		<encoder>
+			<pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{10} - %msg%n
+			</pattern>
+		</encoder>
 	</appender>
-	<logger name="com.litt2.log4j" additivity="false">
-		<level value="WARN" />
-		<appender-ref ref="CONSOLE" />
-	</logger> 
-	<root>
-		<priority value="debug" />
-		<appender-ref ref="CONSOLE" />
+
+	<logger name="chapters.configuration" level="INFO" />
+
+	<!-- Strictly speaking, the level attribute is not necessary since -->
+	<!-- the level of the root level is set to DEBUG by default. -->
+	<root level="DEBUG">
+		<appender-ref ref="STDOUT" />
 	</root>
-</log4j:configuration>
+
+</configuration>

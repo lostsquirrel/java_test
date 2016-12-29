@@ -1,15 +1,21 @@
-package demo.concurrency.thread.fib.v1;
+package exercise.concurrency.thread.q2.fib;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class FibonacciWorker implements Runnable{
+/**
+ * @author lisong
+ *
+ *	练习2
+ * 打印一个由n 斐波纳契数组成的序列
+ */
+public class FibonacciWorker implements Runnable {
 	
 	private static final Logger log = LoggerFactory.getLogger(FibonacciWorker.class);
 	
 	private int n;
 	
-	FibonacciWorker(int n) {
+	public FibonacciWorker(int n) {
 		this.n = n;
 	}
 	
@@ -25,6 +31,6 @@ public class FibonacciWorker implements Runnable{
 			sb.append(gen.next());
 			sb.append(",");
 		}
-		log.info("fib sequeue of {}:{}", n, sb.toString());
+		log.info("{} fib sequeue: {}", n, sb.toString());
 	}
 }

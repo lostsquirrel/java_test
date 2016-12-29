@@ -1,4 +1,4 @@
-package demo.concurrency.thread.yield.v1;
+package exercise.concurrency.thread.q1.yield;
 
 public class TestYieldSimple {
 

@@ -1,7 +1,9 @@
-package demo.concurrency.thread.lift.v1;
+package demo.concurrency.thread.create;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import demo.concurrency.thread.lift.v1.LiftOff;
 
 public class CreateWithMultiThread {
 

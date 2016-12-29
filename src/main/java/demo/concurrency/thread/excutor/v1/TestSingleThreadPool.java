@@ -7,6 +7,11 @@ import demo.concurrency.thread.lift.v1.LiftOff;
 
 public class TestSingleThreadPool {
 
+	/**
+	 * @param args
+	 * 添加 5个任务
+	 * 预期 1 个线程
+	 */
 	public static void main(String[] args) {
 		ExecutorService exec = Executors.newSingleThreadExecutor();
 		

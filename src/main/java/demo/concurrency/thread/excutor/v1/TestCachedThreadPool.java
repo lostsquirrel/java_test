@@ -6,6 +6,9 @@ import java.util.concurrent.Executors;
 import demo.concurrency.thread.lift.v1.LiftOff;
 
 public class TestCachedThreadPool {
+	/**
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		ExecutorService exec = Executors.newCachedThreadPool();
 		for (int i = 0; i < 5; i++) {

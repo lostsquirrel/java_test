@@ -12,6 +12,7 @@ public class SimplePriorities implements Runnable {
 	
 	private int countDown = 5000;
 	
+	@SuppressWarnings("unused")
 	private volatile double d; 
 	
 	private int priority;

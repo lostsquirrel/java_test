@@ -5,7 +5,7 @@ import java.util.concurrent.Executors;
 
 import demo.concurrency.lift.v1.LiftOff;
 
-public class TestCachedThreadPool {
+public class CachedThreadPoolDemo {
 	/**
 	 * @param args
 	 */

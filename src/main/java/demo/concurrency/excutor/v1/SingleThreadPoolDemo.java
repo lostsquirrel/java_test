@@ -5,17 +5,20 @@ import java.util.concurrent.Executors;
 
 import demo.concurrency.lift.v1.LiftOff;
 
-public class TestFixedThreadPool {
+public class SingleThreadPoolDemo {
+
 	/**
 	 * @param args
-	 * 添加10个任务
-	 * 预期使用5个线程
+	 * 添加 5个任务
+	 * 预期 1 个线程
 	 */
 	public static void main(String[] args) {
-		ExecutorService exec = Executors.newFixedThreadPool(5);
-		for (int i = 0; i < 10; i++) {
+		ExecutorService exec = Executors.newSingleThreadExecutor();
+		
+		for (int i = 0; i < 5; i++) {
 			exec.execute(new LiftOff());
 		}
+		
 		exec.shutdown();
 	}
 }

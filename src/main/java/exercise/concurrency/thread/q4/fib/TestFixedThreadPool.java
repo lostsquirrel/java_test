@@ -3,7 +3,7 @@ package exercise.concurrency.thread.q4.fib;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-import demo.concurrency.thread.lift.v1.LiftOff;
+import demo.concurrency.lift.v1.LiftOff;
 
 public class TestFixedThreadPool {
 	/**

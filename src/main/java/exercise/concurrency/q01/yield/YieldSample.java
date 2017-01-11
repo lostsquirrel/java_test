@@ -1,4 +1,4 @@
-package exercise.concurrency.thread.q1.yield;
+package exercise.concurrency.q01.yield;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

@@ -1,11 +1,11 @@
-package exercise.concurrency.thread.q3.yield;
+package exercise.concurrency.q03.yield;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-import exercise.concurrency.thread.q1.yield.YieldSample;
+import exercise.concurrency.q01.yield.YieldSample;
 
-public class TestSingleThreadPool {
+public class SingleThreadPoolExercise {
 
 	/**
 	 * @param args

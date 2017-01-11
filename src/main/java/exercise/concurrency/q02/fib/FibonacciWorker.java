@@ -1,4 +1,4 @@
-package exercise.concurrency.thread.q2.fib;
+package exercise.concurrency.q02.fib;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

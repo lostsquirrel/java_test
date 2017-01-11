@@ -1,4 +1,4 @@
-package exercise.concurrency.thread.q2.fib;
+package exercise.concurrency.q02.fib;
 
 public class Fibonacci {
 	

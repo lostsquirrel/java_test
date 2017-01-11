@@ -1,4 +1,4 @@
-package exercise.concurrency.thread.q6.sleep;
+package exercise.concurrency.q06.sleep;
 
 import java.util.Random;
 import java.util.concurrent.TimeUnit;

@@ -1,12 +1,12 @@
-package exercise.concurrency.thread.q3.yield;
+package exercise.concurrency.q03.yield;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-import exercise.concurrency.thread.q1.yield.YieldSample;
+import exercise.concurrency.q01.yield.YieldSample;
 
 
-public class TestCachedThreadPool {
+public class CachedThreadPoolExercise {
 	/**
 	 * @param args
 	 * 分三次添加15任务，第二次，马上添加，每三次预计前面任务执行完后添加

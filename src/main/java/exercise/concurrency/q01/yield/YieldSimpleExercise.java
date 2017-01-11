@@ -1,6 +1,6 @@
-package exercise.concurrency.thread.q1.yield;
+package exercise.concurrency.q01.yield;
 
-public class TestYieldSimple {
+public class YieldSimpleExercise {
 
 	public static void main(String[] args) {
 		for (int i = 0; i < 5; i++) {

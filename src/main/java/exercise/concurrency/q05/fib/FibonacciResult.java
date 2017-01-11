@@ -1,11 +1,11 @@
-package exercise.concurrency.thread.q5.fib;
+package exercise.concurrency.q05.fib;
 
 import java.util.concurrent.Callable;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import exercise.concurrency.thread.q2.fib.Fibonacci;
+import exercise.concurrency.q02.fib.Fibonacci;
 
 /**
  * @author lisong

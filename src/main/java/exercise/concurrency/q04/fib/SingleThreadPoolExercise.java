@@ -1,11 +1,11 @@
-package exercise.concurrency.thread.q4.fib;
+package exercise.concurrency.q04.fib;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 import demo.concurrency.lift.v1.LiftOff;
 
-public class TestSingleThreadPool {
+public class SingleThreadPoolExercise {
 	/**
 	 * @param args
 	 * 添加 5个任务

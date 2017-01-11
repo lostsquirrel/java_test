@@ -1,4 +1,4 @@
-package exercise.concurrency.thread.q5.fib;
+package exercise.concurrency.q05.fib;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,9 +10,9 @@ import java.util.concurrent.Future;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class TestCachedThreadPool {
+public class CachedThreadPoolExercise {
 	
-	private static Logger log = LoggerFactory.getLogger(TestCachedThreadPool.class);
+	private static Logger log = LoggerFactory.getLogger(CachedThreadPoolExercise.class);
 	
 	/**
 	 * @param args

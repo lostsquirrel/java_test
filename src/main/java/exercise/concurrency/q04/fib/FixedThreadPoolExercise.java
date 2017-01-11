@@ -1,11 +1,11 @@
-package exercise.concurrency.thread.q3.yield;
+package exercise.concurrency.q04.fib;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-import exercise.concurrency.thread.q1.yield.YieldSample;
+import demo.concurrency.lift.v1.LiftOff;
 
-public class TestFixedThreadPool {
+public class FixedThreadPoolExercise {
 	/**
 	 * @param args
 	 * 添加10个任务
@@ -14,7 +14,7 @@ public class TestFixedThreadPool {
 	public static void main(String[] args) {
 		ExecutorService exec = Executors.newFixedThreadPool(5);
 		for (int i = 0; i < 10; i++) {
-			exec.execute(new YieldSample());
+			exec.execute(new LiftOff());
 		}
 		exec.shutdown();
 	}

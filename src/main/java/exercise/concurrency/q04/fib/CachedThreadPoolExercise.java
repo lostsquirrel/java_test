@@ -1,11 +1,11 @@
-package exercise.concurrency.thread.q4.fib;
+package exercise.concurrency.q04.fib;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-import exercise.concurrency.thread.q2.fib.FibonacciWorker;
+import exercise.concurrency.q02.fib.FibonacciWorker;
 
-public class TestCachedThreadPool {
+public class CachedThreadPoolExercise {
 	/**
 	 * @param args
 	 * 分三次添加15任务，第二次，马上添加，每三次预计前面任务执行完后添加

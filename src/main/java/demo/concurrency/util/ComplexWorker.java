@@ -10,10 +10,12 @@ public class ComplexWorker {
 	private volatile double d = 1;
 	
 	public void infiniteWorker() {
+		int counter = 0;
 		while (true) {
 			d = d + (Math.PI + Math.E) / d;
-			if (d % 3 == 0) {
-				log.debug("{}", d);
+			
+			if (counter++ % 1000 == 0) {
+				log.debug("{}:{}",counter, d);
 			}
 		}
 	}

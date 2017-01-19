@@ -4,7 +4,7 @@ import demo.concurrency.share.v1.IntGenerator;
 
 public class SynchronizedEvenGenerator extends IntGenerator {
 
-private int currentEvenValue = 0;
+	private int currentEvenValue = 0;
 	
 	@Override
 	public synchronized int next() {

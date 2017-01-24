@@ -1,4 +1,4 @@
-package demo.concurrency.atomic.v2;
+package demo.concurrency.atomic.v6;
 
 import java.util.Timer;
 import java.util.TimerTask;

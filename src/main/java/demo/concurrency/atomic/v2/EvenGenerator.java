@@ -5,7 +5,7 @@ package demo.concurrency.atomic.v2;
  * @author lisong
  *
  */
-public class Atomicity implements Runnable {
+public class EvenGenerator {
 
 	private int i = 0;
 
@@ -13,16 +13,9 @@ public class Atomicity implements Runnable {
 		return i;
 	}
 
-	private synchronized void evenIncrement() {
+	public synchronized void evenIncrement() {
 		i++;
 		i++;
-	}
-
-	@Override
-	public void run() {
-		while (true) {
-			this.evenIncrement();
-		}
 	}
 
 }

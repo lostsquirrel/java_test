@@ -40,15 +40,15 @@ public class ListDemo {
 			list.add(r.nextInt());
 		}
 		log.debug(list.toString());
-		list.sort(new Comparator<Integer>(){
-
-			@Override
-			public int compare(Integer o1, Integer o2) {
-				int c = o1.compareTo(o2);
-				log.debug("{} ? {} : {}", o1, o2, c);
-				return c * -1;
-			}
-		});
+//		list.sort(new Comparator<Integer>(){
+//
+//			@Override
+//			public int compare(Integer o1, Integer o2) {
+//				int c = o1.compareTo(o2);
+//				log.debug("{} ? {} : {}", o1, o2, c);
+//				return c * -1;
+//			}
+//		});
 		log.debug(list.toString());
 	}
 }

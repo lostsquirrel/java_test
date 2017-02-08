@@ -1,4 +1,4 @@
-package demo.concurrency.interrupt;
+package demo.concurrency.interrupt.v1;
 
 import java.util.ArrayList;
 import java.util.List;

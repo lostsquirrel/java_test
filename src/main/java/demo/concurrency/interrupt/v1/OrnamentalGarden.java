@@ -1,4 +1,4 @@
-package demo.concurrency.interrupt;
+package demo.concurrency.interrupt.v1;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;

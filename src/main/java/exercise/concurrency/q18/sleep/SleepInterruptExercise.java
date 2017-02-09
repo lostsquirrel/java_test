@@ -1,7 +1,5 @@
 package exercise.concurrency.q18.sleep;
 
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 
 public class SleepInterruptExercise {
@@ -12,10 +10,10 @@ public class SleepInterruptExercise {
 	 * 验证sleep的线程能被打断
 	 */
 	public static void main(String[] args) throws InterruptedException {
-		ExecutorService exec = Executors.newCachedThreadPool();
-		
-		exec.execute(new SleepWorker());
+		Thread t = new Thread(new SleepWorker());
+		t.start();
 		TimeUnit.SECONDS.sleep(1);
-		exec.shutdownNow();
+		t.interrupt();
+		
 	}
 }

@@ -1,5 +1,6 @@
 package demo.exception;
 
+@SuppressWarnings("finally")
 public class TestFinally {
 
 	public static void main(String[] args) {
@@ -19,6 +20,7 @@ public class TestFinally {
 			++x;
 		}
 	}
+	
 	
 	static int test1() {
 		 try {

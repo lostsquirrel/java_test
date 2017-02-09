@@ -19,4 +19,10 @@ public class ComplexWorker {
 			}
 		}
 	}
+	
+	public void finiteWorker(int n) {
+		while(n-- > 0) {
+			d = d + (Math.PI + Math.E) / d;
+		}
+	}
 }

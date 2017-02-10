@@ -8,7 +8,8 @@ public class WaitWorker implements Runnable {
 	private static final Logger log = LoggerFactory.getLogger(WaitWorker.class);
 	
 	@Override
-	public void run() {
+	public synchronized void run() {
+		long t = System.currentTimeMillis();
 		try {
 			log.info("开始等");
 			wait();
@@ -16,7 +17,7 @@ public class WaitWorker implements Runnable {
 		} catch (InterruptedException e) {
 			log.info("等被打断");
 		}
-		log.info("等结束");
+		log.info("等结束, 花费{}ms", System.currentTimeMillis() - t);
 	}
 
 }

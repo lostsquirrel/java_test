@@ -18,10 +18,13 @@ public class NotifyAllWorker implements Runnable {
 	@Override
 	public void run() {
 		try {
-			log.info("准备通知");
-			SleepUtils.sleepInSeconds(2);
-			r.notifyAll();
-			log.info("通知完成");
+			synchronized(r){
+				
+				log.info("准备通知");
+				SleepUtils.sleepInSeconds(2);
+				r.notifyAll();
+				log.info("通知完成");
+			}
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}

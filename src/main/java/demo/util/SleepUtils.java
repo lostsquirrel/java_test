@@ -13,4 +13,9 @@ public class SleepUtils {
 		log.info("睡{}秒", seconds);
 		TimeUnit.SECONDS.sleep(seconds);
 	}
+	
+	public static void sleepInMilliSeconds(long milliSeconds) throws InterruptedException {
+		log.info("睡{}毫秒", milliSeconds);
+		TimeUnit.MILLISECONDS.sleep(milliSeconds);
+	}
 }

@@ -10,12 +10,12 @@ public class SleepUtils {
 	private static final Logger log = LoggerFactory.getLogger(SleepUtils.class);
 	
 	public static void sleepInSeconds(int seconds) throws InterruptedException {
-		log.info("睡{}秒", seconds);
+		log.debug("睡{}秒", seconds);
 		TimeUnit.SECONDS.sleep(seconds);
 	}
 	
 	public static void sleepInMilliSeconds(long milliSeconds) throws InterruptedException {
-		log.info("睡{}毫秒", milliSeconds);
+		log.debug("睡{}毫秒", milliSeconds);
 		TimeUnit.MILLISECONDS.sleep(milliSeconds);
 	}
 }

@@ -28,10 +28,11 @@ public class Waiter implements Runnable {
 				log.info("服务生取菜: {}", restaurant.meal);
 				synchronized(restaurant.chef) {
 					restaurant.meal = null;
+					restaurant.isClean = false; // 帮着一起吃了？
 					restaurant.chef.notifyAll();
 				}
-				synchronized(restaurant.bb) {
-					restaurant.bb.notifyAll();
+				synchronized(restaurant.boy) {
+					restaurant.boy.notifyAll();
 				}
 			}
 		} catch (InterruptedException e) {

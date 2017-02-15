@@ -24,13 +24,14 @@ public class BusyBoy implements Runnable {
 		try {
 			while(!Thread.interrupted()) {
 				synchronized(this) {
-					while(restaurant.meal != null) {
+					while(restaurant.isClean) {
 							wait();
 					}
 				}
 				
 				synchronized(restaurant.waiter) {
 					log.info("打扫完工（客人吃了吗？）", restaurant.meal);
+					restaurant.isClean = true;
 					restaurant.waiter.notifyAll();
 				}
 				SleepUtils.sleepInMilliSeconds(100);

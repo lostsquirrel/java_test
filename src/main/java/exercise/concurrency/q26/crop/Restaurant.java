@@ -15,12 +15,13 @@ public class Restaurant {
 	public ExecutorService exec = Executors.newCachedThreadPool();
 	public Chef chef = new Chef(this);
 	public Waiter waiter = new Waiter(this);
-	public BusyBoy bb = new BusyBoy(this);
+	public BusyBoy boy = new BusyBoy(this);
+	public boolean isClean = true;
 	
 	public Restaurant() {
 		exec.execute(chef);
 		exec.execute(waiter);
-		exec.execute(bb);
+		exec.execute(boy);
 	}
 	
 	public static void main(String[] args) {

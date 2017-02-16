@@ -37,7 +37,7 @@ public class Producer implements Runnable {
 						} else {
 							log.warn("添加{}成功", orderNum);
 						}
-						SleepUtils.sleepInMilliSeconds(r.nextInt(2000) + 100);
+						SleepUtils.sleepInMilliseconds(r.nextInt(2000) + 100);
 						stock.notifyAll();
 					} else {
 						stock.wait();

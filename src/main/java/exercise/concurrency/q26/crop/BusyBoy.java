@@ -34,7 +34,7 @@ public class BusyBoy implements Runnable {
 					restaurant.isClean = true;
 					restaurant.waiter.notifyAll();
 				}
-				SleepUtils.sleepInMilliSeconds(100);
+				SleepUtils.sleepInMilliseconds(100);
 			}
 		} catch (InterruptedException e) {
 			log.error("临时工被丢出去了");

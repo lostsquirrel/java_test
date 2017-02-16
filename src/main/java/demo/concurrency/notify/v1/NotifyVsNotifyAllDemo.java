@@ -47,10 +47,10 @@ public class NotifyVsNotifyAllDemo {
 		
 		t.cancel();
 		log.info("Timer cancled");
-		SleepUtils.sleepInMilliSeconds(500);
+		SleepUtils.sleepInMilliseconds(500);
 		log.info("Task2.blocker.prodAll()");
 		Task2.blocker.prodAll();
-		SleepUtils.sleepInMilliSeconds(500);
+		SleepUtils.sleepInMilliseconds(500);
 		log.info("exec.shutdownNow();");
 		exec.shutdownNow();
 		

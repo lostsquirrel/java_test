@@ -41,7 +41,7 @@ public class Chef implements Runnable {
 					log.info("厨师做好菜:{}", restaurant.meal);
 					restaurant.waiter.notifyAll();
 				}
-				SleepUtils.sleepInMilliSeconds(100);
+				SleepUtils.sleepInMilliseconds(100);
 			}
 		} catch (InterruptedException e) {
 			log.error("厨师被丢出去了");

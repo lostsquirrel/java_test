@@ -46,7 +46,7 @@ public class Person {
     }
 
     public void printPerson() {
-        System.out.println(String.format("name:{}, age:{}, gender:{}", name, getAge(), gender));
+        System.out.println(String.format("name:%s, age:%d, gender:%s", name, getAge(), gender));
     }
 
     public Sex getGender() {

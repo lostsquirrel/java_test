@@ -44,7 +44,7 @@ public class PersonUtils {
     }
 
     /**
-     * Approach 7: Use Lambda Expressions Throughout Your Application
+     *
      *
      * @param rosters person list
      */

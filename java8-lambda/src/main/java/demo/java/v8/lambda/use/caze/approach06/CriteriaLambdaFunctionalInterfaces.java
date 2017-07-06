@@ -7,7 +7,7 @@ import java.util.function.Predicate;
 
 /**
  * Approach 6: Use Standard Functional Interfaces with Lambda Expressions
- * 引入Predicate （Functional Interfaces）
+ * 引入Predicate （Functional Interfaces）解耦判断业务
  * Functional Interfaces的具体使用还要研究下
  */
 public class CriteriaLambdaFunctionalInterfaces {

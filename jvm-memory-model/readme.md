@@ -1,0 +1,1 @@
+- `demo.jvm.memory.HeapOOM` 会生成 `java_pid1128.hprof` 文件，需要用 [Eclipse Memory Analyzer](http://www.eclipse.org/mat/) 查看

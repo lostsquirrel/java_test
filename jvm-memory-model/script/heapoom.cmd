@@ -1,0 +1,1 @@
+java -Xms20m -Xmx20m -XX:+HeapDumpOnOutOfMemoryError  -cp ..\target\classes demo.jvm.memory.HeapOOM > heapoom.log

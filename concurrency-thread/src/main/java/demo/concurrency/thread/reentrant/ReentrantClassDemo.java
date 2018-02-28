@@ -10,8 +10,8 @@ public class ReentrantClassDemo {
 
     public static void main(String[] args) {
         Child sc = new Child();
-        new Thread(()-> {sc.operationChild();}).start();
-        new Thread(()-> {sc.operationChild();}).start();
+        new Thread(sc::operationChild).start();
+        new Thread(sc::operationChild).start();
     }
 }
 

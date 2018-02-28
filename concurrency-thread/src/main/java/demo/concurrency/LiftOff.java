@@ -3,10 +3,14 @@ package demo.concurrency;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.util.Vector;
+
 public class LiftOff implements Runnable {
 
     protected int countDown = 10; // Default
+
     private static int taskCount = 0;
+
     private final int id = taskCount++;
 
     private static final Logger log = LoggerFactory.getLogger(LiftOff.class);

@@ -1,7 +1,10 @@
-package demo.concurrency.thread.create;
+package demo.concurrency00.thread.create;
 
 import demo.concurrency.Utils;
 
+/**
+ * 通过实现 Runnable 接口创建线程
+ */
 public class MyRunnableDemo {
     public static void main(String[] args) {
         new Thread(new MyRunnable(), "r1").start();

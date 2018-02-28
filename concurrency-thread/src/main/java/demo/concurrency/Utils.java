@@ -35,7 +35,7 @@ public class Utils {
      */
     private static void doWork(long timeout, TimeUnit timeUnit) {
         try {
-            log.debug("do work in {}{}", timeout, timeUnit.toString());
+            log.debug("do work in {} {}", timeout, timeUnit.toString());
             timeUnit.sleep(timeout);
         } catch (InterruptedException e) {
             e.printStackTrace();

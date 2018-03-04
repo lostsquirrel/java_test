@@ -19,6 +19,8 @@ public class Utils {
     public static final int TIMEOUT_5S = 5;
 
     public static final long TIMEOUT_100MS = 100;
+    public static final long TIMEOUT_500MS = 500;
+
     /**
      * 睡眠指定毫秒
      * @param timeout 睡眠时长
@@ -62,5 +64,6 @@ public class Utils {
                 log.debug("busy boy count to {}", i);
             }
         }
+        log.debug("busy boy count finished");
     }
 }

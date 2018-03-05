@@ -1,6 +1,5 @@
 package demo.concurrency03.thread.priority;
 
-import demo.concurrency.LiftOff;
 import demo.concurrency.Utils;
 
 /**

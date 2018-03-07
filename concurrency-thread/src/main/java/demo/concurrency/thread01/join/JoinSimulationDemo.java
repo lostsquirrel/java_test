@@ -1,4 +1,4 @@
-package demo.concurrency01.thread.join;
+package demo.concurrency.thread01.join;
 
 import demo.concurrency.Utils;
 import org.slf4j.Logger;

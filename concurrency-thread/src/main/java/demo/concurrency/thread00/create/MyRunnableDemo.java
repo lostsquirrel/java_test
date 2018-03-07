@@ -1,4 +1,4 @@
-package demo.concurrency00.thread.create;
+package demo.concurrency.thread00.create;
 
 import demo.concurrency.Utils;
 

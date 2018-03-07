@@ -1,4 +1,4 @@
-package demo.concurrency02.thread.daemon;
+package demo.concurrency.thread02.daemon;
 
 import demo.concurrency.Utils;
 import org.slf4j.Logger;

@@ -25,11 +25,11 @@ public class PriorityDemo {
                 for (int i = 0; i < Short.MAX_VALUE << 2; i++) {
                     y += i;
                 }
-                System.out.println(String.format("Thread %s finished to sum {}", Thread.currentThread().getName(), y));
+                System.out.println(String.format("Thread %s finished to sum %d", Thread.currentThread().getName(), y));
             }, name);
             x++;
             t.setPriority(p);
-            log.debug("thread {} run in priority {}", name, p);
+            System.out.println(String.format("thread {} run in priority {}", name, p));
             t.start();
         }
     }

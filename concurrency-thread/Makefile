@@ -10,6 +10,6 @@ build:
 	
 	
 test: build
-	docker run --rm -it -v $(pwd):/app i386/openjdk:8u151-jdk-alpine3.7 \
+	docker run --rm -it -v $(shell pwd):/app i386/openjdk:8u151-jdk-alpine3.7 \
 	java -cp /app/target/java_test-0.0.1-SNAPSHOT-jar-with-dependencies.jar \
 	$(demo_name)

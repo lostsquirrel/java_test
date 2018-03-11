@@ -9,10 +9,14 @@ public class Long32Demo {
             limit = Integer.parseInt(args[0]);
         }
         Longer longer = new Longer();
-        for (int i = 0; i < limit; i++) {
-            new Thread(new ChangeWorker(longer), "work" + i).start();
-        }
-        System.out.println(String.format("expected %s, get %s ", 10000000000L - 100000 * limit, longer.read()));
+        new Thread(new ChangeWorker(longer), "work").start();
+        new Thread(()-> {
+            while (longer.read() > 0) {
+                System.out.println(String.format("longer %s", Long.toHexString(longer.read())));
+            }
+        });
+        long e = Long.MAX_VALUE - Integer.MAX_VALUE * limit;
+        System.out.println(String.format("expected %s, get %s ", e, longer.read()));
     }
 
 }
@@ -36,7 +40,7 @@ class Longer {
     long item = Long.MAX_VALUE;
 
     void change() {
-        item -= 10;
+        item -= Integer.MAX_VALUE;
     }
 
     long read() {

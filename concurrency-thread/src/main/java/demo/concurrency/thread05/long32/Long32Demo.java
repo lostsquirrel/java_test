@@ -35,7 +35,7 @@ class ReaderWorker implements Runnable {
     @Override
     public void run() {
         for (int i = 0; i < limit; i++) {
-            System.out.println(String.format("current value is {}", Long.toHexString(longer.read())));
+            System.out.println(String.format("current value is %s", Long.toHexString(longer.read())));
         }
         writer.interrupt();
     }

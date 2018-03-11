@@ -10,9 +10,9 @@ public class Long32Demo {
         }
         Longer longer = new Longer();
         for (int i = 0; i < limit; i++) {
-            new Thread(new ChangeWorker(longer), "work" + 1).start();
+            new Thread(new ChangeWorker(longer), "work" + i).start();
         }
-        System.out.println(String.format("expected %s, get %s ", 10000000000L - 1000 * limit, longer.read()));
+        System.out.println(String.format("expected %s, get %s ", 10000000000L - 100000 * limit, longer.read()));
     }
 
 }
@@ -25,7 +25,7 @@ class ChangeWorker implements Runnable {
 
     @Override
     public void run() {
-        for (int i = 0; i < 1000; i++) {
+        for (int i = 0; i < 100000; i++) {
             longer.change();
         }
         System.out.println(String.format("%s: %s", Thread.currentThread().getName(), longer.read()));
@@ -33,7 +33,7 @@ class ChangeWorker implements Runnable {
 }
 
 class Longer {
-    long item = 10000000000L;
+    long item = Long.MAX_VALUE;
 
     void change() {
         item -= 10;

@@ -16,3 +16,5 @@ java -cp target/java_test-0.0.1-SNAPSHOT-jar-with-dependencies.jar demo.concurre
 docker run --rm -it -v $(pwd):/app i386/openjdk:8u151-jdk-alpine3.7 \
 java -cp /app/target/java_test-0.0.1-SNAPSHOT-jar-with-dependencies.jar \
 demo.concurrency.thread05.long32.Long32Demo
+
+make demo_name="demo.concurrency.thread05.long32.Long32Demo 10" code build test

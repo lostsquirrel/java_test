@@ -1,25 +1,27 @@
 package demo.concurrency.thread05.long32;
 
+/**
+ * TODO 未完成
+ */
 public class Long32Demo {
 
     public static void main(String[] args) {
 
-        int limit = 3;
-        if (args.length > 0) {
-            limit = Integer.parseInt(args[0]);
-        }
         Longer longer = new Longer();
         new Thread(new ChangeWorker(longer), "work").start();
         new Thread(()-> {
-            while (longer.read() > 0) {
-                System.out.println(String.format("longer %s", Long.toHexString(longer.read())));
+            for (int i = 0; i < Integer.MAX_VALUE >> 3; i++) {
+                if (longer.read() <= Integer.MAX_VALUE) {
+                    System.out.println(String.format("longer broken %s", Long.toBinaryString(longer.read())));
+                    System.exit(0);
+                }
             }
-        });
-        long e = Long.MAX_VALUE - Integer.MAX_VALUE * limit;
-        System.out.println(String.format("expected %s, get %s ", e, longer.read()));
+        }).start();
+        System.out.println(String.format("final %s ", longer.read()));
     }
 
 }
+
 class ChangeWorker implements Runnable {
     Longer longer;
 
@@ -29,8 +31,12 @@ class ChangeWorker implements Runnable {
 
     @Override
     public void run() {
-        for (int i = 0; i < 100000; i++) {
+        System.out.println(String.format("%s: %s", Thread.currentThread().getName(), longer.read()));
+        for (int i = 0; i < Integer.MAX_VALUE; i++) {
             longer.change();
+            if (i % (Integer.MAX_VALUE >> 3) == 0) {
+                System.out.println(String.format("longer %s", Long.toBinaryString(longer.read())));
+            }
         }
         System.out.println(String.format("%s: %s", Thread.currentThread().getName(), longer.read()));
     }

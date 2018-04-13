@@ -2,7 +2,7 @@ package demo.java.codewars;
 
 /**
  * https://www.codewars.com/kata/54da539698b8a2ad76000228/train/java
- * 
+ *
  * you don't want to be early or late!, so should be just 10 elements
  * return you to your starting point, so n s should be at same count while w e should be at same count
  */

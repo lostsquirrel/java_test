@@ -2,6 +2,10 @@ package demo.java.codewars;
 
 import java.util.List;
 
+/**
+ * @param <I>
+ *     https://www.codewars.com/kata/515bb423de843ea99400000a
+ */
 public class PaginationHelper<I> {
 
     private List<I> collection;

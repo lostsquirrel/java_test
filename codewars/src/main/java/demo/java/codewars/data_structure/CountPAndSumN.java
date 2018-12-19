@@ -8,18 +8,7 @@ public class CountPAndSumN {
 
     public static int[] countPositivesSumNegatives(int[] input) {
         if (input != null && input.length > 0) {
-            int[] res = new int[2];
-            IntStream s = Arrays.stream(input);
-            s.forEach((x) -> {
-                        if (x > 0) {
-                            res[0] += 1;
-                        } else {
-                            res[1] += x;
-                        }
-                    }
-
-            );
-            return res;
+            return new int[]{(int) Arrays.stream(input).filter(e -> e > 0).count(), Arrays.stream(input).filter(e-> e < 0).sum()};
         }
 
         return new int[0]; //return an array with count of positives and sum of negatives

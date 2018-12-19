@@ -1,7 +1,6 @@
 package demo.java.codewars.data_structure;
 
 import java.util.Arrays;
-import java.util.stream.IntStream;
 
 //https://www.codewars.com/kata/count-of-positives-slash-sum-of-negatives/train/java
 public class CountPAndSumN {
